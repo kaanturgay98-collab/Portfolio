@@ -1,0 +1,14 @@
+[
+  {
+    "id": "project-01",
+    "title": "Campari – Advanced Performance Measurement",
+    "year": 2025,
+    "tags": ["Power BI", "KPI", "Analytics"],
+    "links": {
+      "report": "projects/project-01/report.pdf",
+      "code": "projects/project-01/code/",
+      "cover": "projects/project-01/cover.jpg"
+    },
+    "summary": "Sales & marketing KPI framework, country dashboards, competitive insights."
+  }
+]
