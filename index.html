@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kaan Turgay – Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root{--bg:#0b0c10;--card:#111218;--muted:#a8b0bf;--text:#eef2f7;--brand:#6ad1ff;--accent:#7cf58a;--ring:rgba(106,209,255,.4)}
+    *{box-sizing:border-box}html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--text);background:radial-gradient(1200px 600px at 80% -10%, rgba(106,209,255,.06), transparent 60%),radial-gradient(900px 500px at 10% 110%, rgba(124,245,138,.06), transparent 60%),var(--bg)}
+    a{color:var(--brand);text-decoration:none}a:hover{text-decoration:underline}
+    .container{max-width:1100px;margin:0 auto;padding:28px 20px 64px}
+    header{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;margin-bottom:24px}
+    .brand{display:flex;align-items:center;gap:14px}.avatar{width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,var(--brand),var(--accent))}
+    .brand h1{font-size:22px;margin:0}.tag{display:inline-flex;gap:8px;align-items:center;border:1px solid rgba(255,255,255,.08);padding:6px 10px;border-radius:999px;color:var(--muted);background:rgba(255,255,255,.02)}
+    .pill{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(106,209,255,.12);color:#cfefff;border:1px solid rgba(106,209,255,.25)}
+    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:20px;align-items:center;margin-top:10px}
+    .hero h2{font-size:34px;line-height:1.2;margin:0 0 12px}.hero p{color:var(--muted);margin:0 0 18px}
+    .btn{padding:12px 14px;border-radius:12px;border:1px solid rgba(255,255,255,.12);background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.02));color:var(--text);font-weight:600}
+    .btn.primary{border-color:rgba(106,209,255,.5);background:linear-gradient(180deg,rgba(106,209,255,.25),rgba(106,209,255,.12));box-shadow:0 10px 30px -15px var(--ring)}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:18px;box-shadow:0 10px 30px -20px rgba(0,0,0,.6)}
+    section{margin-top:28px}.section-title{font-size:18px;letter-spacing:.2px;margin:0 0 12px;color:#dfe6f3}
+    .grid{display:grid;gap:14px}.grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}.grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+    @media(max-width:900px){.hero{grid-template-columns:1fr}.grid-2,.grid-3{grid-template-columns:1fr}}
+    .kvs{display:flex;flex-wrap:wrap;gap:8px}.list{padding-left:18px;margin:8px 0 0}.list li{margin:6px 0;color:var(--text)}
+    .muted{color:var(--muted)}.row{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}.row .left{font-weight:700}
+    footer{margin-top:36px;color:var(--muted);text-align:center}
+  </style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="brand">
+      <div class="avatar" aria-hidden="true"></div>
+      <div>
+        <h1>Kaan Turgay</h1>
+        <div class="tag">Business Analyst • Data & Marketing Analyst</div>
+      </div>
+    </div>
+    <div class="kvs">
+      <span class="pill">Python</span><span class="pill">R</span><span class="pill">SQL</span>
+      <span class="pill">Power BI</span><span class="pill">Tableau</span><span class="pill">Qlik Sense</span>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="card">
+      <h2>Turning data into decisions — fast.</h2>
+      <p>Management Engineering M.Sc. candidate (Politecnico di Milano) specialized in <strong>data analysis</strong>, <strong>marketing analytics</strong>, <strong>business intelligence</strong>, <strong>KPI tracking</strong>, and <strong>predictive modeling</strong>. Hands-on with Python, R, SQL, Power BI, Tableau, and Qlik Sense.</p>
+      <div class="kvs" style="gap:12px;margin-top:8px">
+        <a class="btn primary" href="#projects">View Projects</a>
+        <a class="btn" href="#contact">Contact</a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="section-title">Quick Facts</div>
+      <ul class="list">
+        <li>Location: Türkiye • Open to EU opportunities</li>
+        <li>Languages: Turkish (Native), English (Advanced), Italian (Beginner)</li>
+        <li>Focus: Retention, CRM, dashboards, ML models, marketing strategy</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="section-title">Skills</div>
+    <div class="grid grid-3">
+      <div class="card">
+        <h3>Data Analysis & ML</h3>
+        <p class="muted">Python (pandas, NumPy, scikit-learn, XGBoost, matplotlib, statsmodels), R (tidyverse, forecast), SQL</p>
+        <p class="muted">Data cleaning • Feature engineering • ARIMA • PCA/SPC • A/B testing</p>
+      </div>
+      <div class="card">
+        <h3>Marketing Analytics & CRM</h3>
+        <p class="muted">Churn models • <strong>RFM</strong> segmentation • <strong>MBA</strong> rules • Cohort/retention • Attribution • Funnel KPIs</p>
+      </div>
+      <div class="card">
+        <h3>BI & Visualization</h3>
+        <p class="muted">Power BI • Tableau • Qlik Sense/NPrinting • Snowflake • ETL basics • KPI automation • SaaS tools</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="section-title">Experience</div>
+    <div class="grid">
+      <div class="card">
+        <div class="row"><div class="left">Sales & Marketing Intern — <strong>Social Office</strong> (Remote)</div><div>Aug 2025–Present</div></div>
+        <ul class="list">
+          <li>Part of the Marketing & Sales Internship Program; exposure to marketing, advertising, social media, digital transformation, and marketing law.</li>
+          <li>Involved in portfolio production–design and supporting the marketing team’s projects in a fast-paced, international environment.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="row"><div class="left">Business Intelligence & Analytics Consultant — <strong>GlobaSteer (Omega CRO)</strong>, Ankara</div><div>Sep 2022–May 2023</div></div>
+        <ul class="list">
+          <li>Built dashboards in <strong>Tableau</strong> & <strong>Qlik Sense</strong> using <strong>Snowflake</strong> & <strong>MySQL</strong>.</li>
+          <li>Applied <strong>Python & R</strong> for KPI tracking, competitor analysis, and market insights.</li>
+          <li>Delivered reports for <strong>Royalty Pharma</strong> and <strong>Alexion</strong>.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="row"><div class="left">Part‑Time Sales/Data Engineer — <strong>Atema</strong>, Ankara</div><div>Sep 2020–May 2022</div></div>
+        <ul class="list">
+          <li>On‑site assessments; built <strong>Excel/Python</strong> models for cost analysis and process optimization.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="row"><div class="left">Engineering Intern — <strong>Atema</strong>, Ankara</div><div>Jun 2018–Aug 2018</div></div>
+        <ul class="list">
+          <li>Supported factory process optimization by analyzing machining workflows.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="section-title">Selected Projects</div>
+    <div class="grid grid-2">
+      <div class="card">
+        <div class="row"><div class="left">Customer Behavior Analytics (2025)</div><div class="muted">Python • R • SQL • SPSS • Excel</div></div>
+        <ul class="list">
+          <li>Churn prediction (LogReg, Decision Trees, XGBoost), <strong>RFM</strong> segmentation, <strong>MBA</strong> rules.</li>
+          <li>Improved retention targeting with actionable cohorts and dashboards.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="row"><div class="left">Campari Group — Advanced Performance Measurement (2025)</div><div class="muted">Python • R • Power BI</div></div>
+        <ul class="list">
+          <li>Power BI product integrating sales, marketing and social KPIs across 3 countries.</li>
+          <li>Competitor benchmarking and promo effectiveness; executive reporting.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="row"><div class="left">3D Printing Quality Monitoring (2024)</div><div class="muted">Python • SPC</div></div>
+        <ul class="list">
+          <li>QC with Shewhart, CUSUM, EWMA charts, PCA & ARIMA forecasting.</li>
+          <li>Reduced defect detection time; improved QA KPIs.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="row"><div class="left">Samsung Galaxy Ring — Omnichannel Strategy (2025)</div><div class="muted">Python • Marketing SaaS</div></div>
+        <ul class="list">
+          <li>Persona‑based journeys; Google Analytics & Meta Ads Manager for KPI tracking.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="row"><div class="left">L’Oréal Paris — Strategic Marketing Project (2024)</div><div class="muted">Marketing Strategy • KPI Analysis</div></div>
+        <ul class="list">
+          <li>Segmentation, positioning, competitive benchmark.</li>
+          <li>Campaign performance review; optimization recommendations.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="grid grid-2">
+      <div class="card">
+        <div class="section-title">Education</div>
+        <div class="row"><div class="left">Politecnico di Milano — M.Sc., Management Engineering (Digital Business Innovation & Analytics)</div><div>2023–Present</div></div>
+        <div class="row"><div class="left">Bilkent University — B.Sc., Mechanical Engineering (Honors, GPA 3.02/4.00)</div><div>2018–2022</div></div>
+        <div class="row"><div class="left">BUSEL — English Language School</div><div>2016–2018</div></div>
+      </div>
+      <div class="card">
+        <div class="section-title">Certificates & Awards</div>
+        <ul class="list">
+          <li><strong>Google Professional Data Analytics Specialization</strong> — Coursera (Nov 2022)</li>
+          <li><strong>Politecnico di Milano Certificates</strong> — (Dec 2023): Fundamentals of Strategy; Economics; Operations; Organization; Project Management Beyond Planning & Control; Financial & Management Accounting</li>
+          <li><strong>Bilkent Honor Roll</strong> — 2019/2, 2020/1, 2020/2</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="section-title">Contact</div>
+    <div class="card">
+      <p>Email: <a href="mailto:kaanturgay98@gmail.com">kaanturgay98@gmail.com</a> • LinkedIn: <a href="https://www.linkedin.com/in/kaan-turgay-4b3271193" target="_blank" rel="noreferrer">/in/kaan-turgay-4b3271193</a></p>
+    </div>
+  </section>
+
+  <footer>© <span id="y"></span> Kaan Turgay — Built with HTML/CSS.</footer>
+</div>
+<script>document.getElementById('y').textContent=(new Date).getFullYear()</script>
+</body></html>
