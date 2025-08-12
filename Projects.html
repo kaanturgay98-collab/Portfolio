@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Projects – Kaan Turgay</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body{margin:0;background:#0b0c10;color:#eef2f7;font-family:Inter,system-ui}
+    .container{max-width:1100px;margin:0 auto;padding:28px 20px 64px}
+    a{color:#6ad1ff;text-decoration:none} a:hover{text-decoration:underline}
+    .grid{display:grid;gap:14px;grid-template-columns:repeat(3,minmax(0,1fr))}
+    @media(max-width:900px){.grid{grid-template-columns:1fr}}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.02));
+      border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:16px}
+    .cover{width:100%;height:160px;object-fit:cover;border-radius:12px;margin-bottom:10px;
+      background:linear-gradient(135deg,#6ad1ff33,#7cf58a33)}
+    .tags{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 10px}
+    .tag{font-size:12px;padding:4px 8px;border-radius:999px;border:1px solid #ffffff22}
+    .row{display:flex;gap:10px;flex-wrap:wrap}
+    .btn{padding:8px 10px;border-radius:10px;border:1px solid #ffffff22}
+    header{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 style="margin:0;font-size:22px">Projects</h1>
+      <a href="./" class="btn">← Back to Home</a>
+    </header>
+    <div id="grid" class="grid"></div>
+  </div>
+
+<script>
+(async () => {
+  try {
+    const res = await fetch('./projects/data.json', {cache:'no-store'});
+    const items = await res.json();
+    const grid = document.getElementById('grid');
+    items.forEach(p => {
+      const card = document.createElement('div');
+      card.className = 'card';
+      const cover = p.links?.cover ? `<img class="cover" src="${p.links.cover}" alt="">` : `<div class="cover"></div>`;
+      const tags = (p.tags||[]).map(t=>`<span class="tag">${t}</span>`).join('');
+      const links = `
+        <div class="row">
+          ${p.links?.report ? `<a class="btn" href="../${p.links.report}" target="_blank" rel="noreferrer">Report</a>` : ''}
+          ${p.links?.code ? `<a class="btn" href="../${p.links.code}" target="_blank" rel="noreferrer">Code</a>` : ''}
+          ${p.links?.demo ? `<a class="btn" href="../${p.links.demo}" target="_blank" rel="noreferrer">Live Demo</a>` : ''}
+        </div>`;
+      card.innerHTML = `
+        ${cover}
+        <h3 style="margin:0 0 4px">${p.title} <span style="color:#a8b0bf;font-weight:400">(${p.year})</span></h3>
+        <div class="tags">${tags}</div>
+        <p style="color:#a8b0bf;margin:0 0 12px">${p.summary || ''}</p>
+        ${links}
+      `;
+      grid.appendChild(card);
+    });
+  } catch (e) {
+    document.getElementById('grid').innerHTML = '<p>Could not load projects.</p>';
+  }
+})();
+</script>
+</body>
+</html>
