@@ -1,1 +1,95 @@
+# 📌 CRM Analytics – RFM, Market Basket Analysis, Churn Prediction & KPIs
+
+This project contains a complete Customer Analytics pipeline, including segmentation, behavior analysis, retention modeling, and performance measurement.  
+It integrates **RFM scoring**, **Market Basket Analysis (MBA)**, **Churn Prediction**, and **key CRM KPIs** such as **CLV**, **Churn Rate**, **Retention Rate**, **AOV**, and more.
+
+---
+
+## 📊 Project Components
+
+### **1️⃣ RFM Analysis**
+- Computed Recency, Frequency, Monetary scores
+- Custom scoring logic aligned with my Politecnico di Milano coursework (R-based RFM logic)
+- Customer segmentation with interpretable RFM groups
+- Heatmaps, distribution plots, and behavioral clusters
+- Identifying high-value, at-risk, and inactive customers
+
+---
+
+### **2️⃣ Market Basket Analysis (MBA)**
+- Association rules using Python (mlxtend) & R (arules)
+- Support–Confidence–Lift metrics
+- Weekday vs. weekend rule comparison
+- Product bundling opportunities
+- Cross-sell & upsell recommendations
+
+---
+
+### **3️⃣ Churn Analysis & Retention Modeling**
+- Churn labeling methodology (activity window / RFM-based triggers)
+- Logistic Regression, Gradient Boosting, Random Forest models
+- Feature importance analysis
+- Retention strategy recommendations based on churn drivers
+- Predictive uplift for targeted campaigns
+
+---
+
+### **4️⃣ Customer Lifetime Value (CLV)**
+- Historic and predictive CLV calculation
+- Monetary value forecasting (Pareto/NBD or Gamma-Gamma models)
+- Segment-level CLV insights
+- High-CLV customer retention plans
+
+---
+
+### **5️⃣ CRM Performance KPIs**
+- Churn Rate  
+- Retention Rate  
+- Customer Lifetime Value (CLV)  
+- Average Order Value (AOV)  
+- Purchase Frequency  
+- Active Customers  
+- Acquisition vs. Retention mix  
+- Revenue contribution by segment  
+
+Includes visual dashboards (Tableau/Power BI/Qlik style).
+
+---
+
+## 🛠 Technologies Used
+- **Python**: Pandas, NumPy, scikit-learn, mlxtend, Seaborn, Matplotlib  
+- **R**: tidyverse, arules, caret, ggplot2  
+- **SQL**  
+- **Tableau / Power BI / Qlik Sense**  
+- Jupyter Notebook  
+
+---
+
+
+---
+
+## 🎯 Goal of This Project
+To build an end-to-end CRM analytics framework capable of:
+- Understanding customer behavior  
+- Predicting churn  
+- Increasing customer lifetime value  
+- Improving retention strategy  
+- Supporting data-driven marketing decisions  
+
+---
+
+## ✨ Key Outcomes
+- Actionable customer segments
+- High-performing product association rules
+- Predictive churn model with key retention drivers
+- CLV-based customer prioritization
+- Full CRM dashboard with KPIs
+
+---
+
+## 👤 Author
+**Kaan Turgay**  
+Data Analyst • Business Analyst • CRM & Marketing Analytics  
+
+
 
