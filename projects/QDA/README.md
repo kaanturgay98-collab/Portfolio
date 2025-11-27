@@ -1,81 +1,103 @@
-Phase 1 – Statistical Quality Control & Exploratory Analysis
-✔ Included Topics
+QDA – Quality Data Analysis Project
+Phase 1 & Phase 2 | SPC, PCA, ARIMA, Multivariate Control, Capability Analysis
 
-Exploratory Data Analysis (EDA)
+Bu proje, Politecnico di Milano – Quality Data Analysis (QDA) dersi kapsamında geliştirilmiş, istatistiksel kalite kontrol, çok değişkenli analiz, zaman serisi modelleme ve endüstriyel veri tanıma süreçlerini gösteren kapsamlı bir çalışmadır.
 
-Normality assessment
+📁 Project Structure
+QDA/
+│── data/                              → raw & cleaned datasets
+│── QDA_TEAM_14_PHASE1.ipynb           → Phase 1 analysis (SPC, Capability)
+│── QDA_TEAM_14_PHASE2.ipynb           → Phase 2 analysis (PCA, T², ARIMA)
+│── README.md
 
-QQ-plots
+🚀 Phase 1 — Exploratory Analysis & Statistical Process Control (SPC)
+🔬 Included Techniques
 
-Shapiro–Wilk test
+🧪 Shapiro–Wilk normality test
 
-Univariate SPC Charts
+📈 Univariate SPC Charts
 
 X̄–R Chart
 
-Individuals–Moving Range (I–MR)
+Individuals–Moving Range (I–MR) Chart
 
-Capability Analysis
+🎯 Capability Analysis
 
-Cp, Cpk, Pp, Ppk evaluation
+Cp, Cpk, Pp, Ppk
 
-Outlier detection & diagnostic investigation
+🔍 Outlier detection & diagnostic investigation
 
-Box–Cox transformation for non-normal data
+🔄 Box–Cox Transformation
 
-Root-cause analysis for process variation
+Non-normal distribution correction
 
-🎯 Main Outcomes
+🛠️ Root-cause analysis
 
-Identified unstable process segments
+Variation sources & stability evaluation
 
-Quantified short-term & long-term capability
+🎯 Main Outcomes — Phase 1
 
-Suggested corrective actions to improve process stability
+🚨 Identified unstable segments affecting process performance
 
-📙 Phase 2 – Multivariate Quality Analysis & Time Series Modeling
-✔ Included Topics
+📉 Evaluated capability indices for both short-term & long-term behavior
 
-Principal Component Analysis (PCA)
+🛠️ Proposed corrective actions to improve stability & reduce variation
 
-Variance explanation
+📊 Clear SPC charts + interpretation for all variables
 
-Contribution & score plots
+📘 Phase 2 — Multivariate Analysis & Time Series Modeling
+✔ Included Techniques
 
-Hotelling’s T² Control Chart
+🔍 Principal Component Analysis (PCA)
 
-Multivariate process monitoring
+Explained variance
 
-ARIMA Time-Series Modeling
+Contribution plots
 
-ACF / PACF selection
+Score projections
 
-Parameter tuning (p,d,q)
+📊 Hotelling’s T² Control Chart
 
-Forecasting
+Multivariate out-of-control detection
 
-Residual analysis & model adequacy checking
+⏳ ARIMA Time-Series Modeling
 
-Multivariate anomaly detection
+ACF & PACF inspection
 
-🎯 Main Outcomes
+Parameter tuning (p, d, q)
 
-Built multivariate monitoring models for correlated variables
+Forecasting & error analysis
 
-Detected multivariate out-of-control states
+🧪 Residual Diagnostics
 
-Built ARIMA-based forecasts to predict future process behavior
+Ljung–Box test
 
-🔬 Core Skills Demonstrated
+Autocorrelation checks
 
-Statistical process control (SPC)
+🚨 Multivariate anomaly detection
 
-PCA & multivariate monitoring
+Detecting correlated shifts not visible in univariate charts
 
-Time-series forecasting
+🎯 Main Outcomes — Phase 2
 
-Industrial data cleaning & preprocessing
+✔ Built a multivariate monitoring model capable of detecting subtle process shifts
 
-Statistical diagnostics & validation
+✔ Developed ARIMA-based forecasts for future process behavior
 
-Python data analysis (Pandas, NumPy, SciPy, statsmodels, sklearn, matplotlib)
+✔ Identified root causes of multivariate anomalies
+
+✔ Created a complete predictive + diagnostic quality model
+
+🧠 Skills Demonstrated
+Category	Skills
+Quality Engineering	SPC, Capability, Variation analysis
+Multivariate Statistics	PCA, T² Charts, Outlier detection
+Time-Series Modeling	ARIMA, Forecasting, Diagnostics
+Data science stack	Pandas, NumPy, SciPy, scikit-learn, statsmodels
+Visualization	Matplotlib, Seaborn, Statistical plotting
+Industrial Analytics	Process monitoring, root-cause, quality improvement
+📌 Summary
+
+Bu proje; kalite mühendisliği, veri bilimi ve istatistiksel modelleme tekniklerini bütünleştirerek endüstride kullanılan tam kapsamlı bir kalite analiz sürecini göstermektedir.
+
+Hem univariate hem multivariate kontrol, tahmin modelleri, diagnostic testler ve veri işleme süreçleri profesyonel bir şekilde uygulanmıştır.
